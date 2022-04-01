@@ -30,10 +30,9 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - libopenblas
     - r-base
-    - r-mass
     - r-rcpp
     - r-rcpparmadillo
     - r-dplyr
@@ -43,15 +42,12 @@ requirements:
     - r-loo >=2.0.0
     - r-magrittr
     - r-mgcv
-    - r-optimx
-    - r-rngtools >=1.2.4
+    - r-mvtnorm
+    - r-rlang
     - r-rstantools >=2.0.0
-    - r-tidyverse
   run:
-    - libopenblas
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - r-mass
     - r-rcpp
     - r-rcpparmadillo
     - r-dplyr
@@ -61,10 +57,9 @@ requirements:
     - r-loo >=2.0.0
     - r-magrittr
     - r-mgcv
-    - r-optimx
-    - r-rngtools >=1.2.4
+    - r-mvtnorm
+    - r-rlang
     - r-rstantools >=2.0.0
-    - r-tidyverse
 
 test:
   commands:
