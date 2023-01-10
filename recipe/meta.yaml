@@ -1,4 +1,4 @@
-{% set version = "2.2.2" %}
+{% set version = "2.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/projpred_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/projpred/projpred_{{ version }}.tar.gz
-  sha256: 7be8c4d9042dc7e0a963eb3145c027dea6b8a91b002070cadd23b3855595cc3b
+  sha256: f4a3cfb569e1ad6f771189de55ef3ff002dcc00d6488a0484b9a6181470cd37a
 
 build:
   merge_build_host: true  # [win]
