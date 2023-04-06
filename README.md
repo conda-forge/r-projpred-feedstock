@@ -1,11 +1,22 @@
+About r-projpred-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-projpred-feedstock/blob/main/LICENSE.txt)
+
 About r-projpred
-================
+----------------
 
 Home: https://mc-stan.org/projpred/, https://discourse.mc-stan.org
 
 Package license: GPL-3.0-only
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-projpred-feedstock/blob/main/LICENSE.txt)
+Summary: Performs projection predictive feature selection for generalized linear models and generalized linear and additive multilevel models (see, Piironen, Paasiniemi and Vehtari, 2020, <https://projecteuclid.org/euclid.ejs/1589335310>, Catalina, Bürkner and Vehtari, 2020, <arXiv:2010.06994>). The package is compatible with the 'rstanarm' and 'brms' packages, but other reference models can also be used. See the package vignette for more information and examples.
+About r-projpred
+----------------
+
+Home: https://mc-stan.org/projpred/, https://discourse.mc-stan.org
+
+Package license: GPL-3.0-only
 
 Summary: Performs projection predictive feature selection for generalized linear models and generalized linear and additive multilevel models (see, Piironen, Paasiniemi and Vehtari, 2020, <https://projecteuclid.org/euclid.ejs/1589335310>, Catalina, Bürkner and Vehtari, 2020, <arXiv:2010.06994>). The package is compatible with the 'rstanarm' and 'brms' packages, but other reference models can also be used. See the package vignette for more information and examples.
 
