@@ -37,20 +37,18 @@ requirements:
     - r-rcpp
     - r-rcpparmadillo
     - r-abind
-    - r-dplyr
     - r-gamm4
     - r-ggplot2
-    - r-lme4
+    - r-gtools
+    - r-lme4 >=1.1_28
     - r-loo >=2.0.0
-    - r-magrittr
     - r-mclogit
     - r-mgcv
     - r-mvtnorm
     - r-nnet
     - r-ordinal
-    - r-rlang
     - r-rstantools >=2.0.0
-    - r-ucminf
+    - r-scales
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
@@ -58,20 +56,18 @@ requirements:
     - r-rcpp
     - r-rcpparmadillo
     - r-abind
-    - r-dplyr
     - r-gamm4
     - r-ggplot2
-    - r-lme4
+    - r-gtools
+    - r-lme4 >=1.1_28
     - r-loo >=2.0.0
-    - r-magrittr
     - r-mclogit
     - r-mgcv
     - r-mvtnorm
     - r-nnet
     - r-ordinal
-    - r-rlang
     - r-rstantools >=2.0.0
-    - r-ucminf
+    - r-scales
 
 test:
   commands:
