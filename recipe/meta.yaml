@@ -14,17 +14,21 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  missing_dso_whitelist:
+    - '*/R.dll'           # [win]
+    - '*/Rblas.dll'       # [win]
+    - '*/Rlapack.dll'     # [win]
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{ compiler('c') }}              # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ compiler('cxx') }}            # [not win]
-    - {{ compiler('m2w64_cxx') }}      # [win]
+    - {{ compiler('c') }}          # [not win]
+    - {{ compiler('m2w64_c') }}    # [win]
+    - {{ compiler('cxx') }}        # [not win]
+    - {{ compiler('m2w64_cxx') }}  # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
@@ -49,6 +53,8 @@ requirements:
     - r-ordinal
     - r-rstantools >=2.0.0
     - r-scales
+    - libblas
+    - liblapack
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
