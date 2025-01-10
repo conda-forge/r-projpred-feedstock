@@ -16,7 +16,7 @@ build:
     - '*/R.dll'           # [win]
     - '*/Rblas.dll'       # [win]
     - '*/Rlapack.dll'     # [win]
-  number: 2
+  number: 3
   rpaths:
     - lib/R/lib/
     - lib/
@@ -101,7 +101,6 @@ about:
   license: GPL-3.0-only
   summary: Performs projection predictive feature selection for generalized linear models and generalized linear and additive multilevel models (see, Piironen, Paasiniemi and Vehtari, 2020, <https://projecteuclid.org/euclid.ejs/1589335310>, Catalina, Bürkner and Vehtari, 2020, <arXiv:2010.06994>). The package is compatible
     with the 'rstanarm' and 'brms' packages, but other reference models can also be used. See the package vignette for more information and examples.
-  license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
     - LICENSE
