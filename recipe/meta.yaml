@@ -1,4 +1,4 @@
-{% set version = "2.9.0" %}
+{% set version = "2.9.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,14 +9,14 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/projpred_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/projpred/projpred_{{ version }}.tar.gz
-  sha256: e78109337aa4050d1f6737bf01956371383704fb4fbb5bcdab5eb9c0f8c10606
+  sha256: be63e12a0b70332ca6fae85ecf41208f4e04aadbc8879822c4e71a140aa5eb80
 
 build:
   missing_dso_whitelist:
     - '*/R.dll'           # [win]
     - '*/Rblas.dll'       # [win]
     - '*/Rlapack.dll'     # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
