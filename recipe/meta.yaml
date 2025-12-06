@@ -1,4 +1,4 @@
-{% set version = "2.9.1" %}
+{% set version = "2.10.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/projpred_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/projpred/projpred_{{ version }}.tar.gz
-  sha256: be63e12a0b70332ca6fae85ecf41208f4e04aadbc8879822c4e71a140aa5eb80
+  sha256: f404b1c0df634ab5821454386d379586c01047384d67d9227a22312655c59b47
 
 build:
   missing_dso_whitelist:
