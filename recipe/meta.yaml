@@ -72,6 +72,8 @@ requirements:
     - r-reformulas
     - r-rstantools >=2.0.0
     - r-scales
+    - libblas
+    - liblapack
   run:
     - r-base
     - r-mass
