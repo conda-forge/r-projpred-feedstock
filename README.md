@@ -11,7 +11,7 @@ Home: https://mc-stan.org/projpred/, https://discourse.mc-stan.org
 
 Package license: GPL-3.0-only
 
-Summary: Performs projection predictive feature selection for generalized linear models and generalized linear and additive multilevel models (see, Piironen, Paasiniemi and Vehtari, 2020, <https://projecteuclid.org/euclid.ejs/1589335310>, Catalina, Bürkner and Vehtari, 2020, <arXiv:2010.06994>). The package is compatible with the 'rstanarm' and 'brms' packages, but other reference models can also be used. See the package vignette for more information and examples.
+Summary: Performs projection predictive feature selection for generalized linear models (Piironen, Paasiniemi, and Vehtari, 2020, <doi:10.1214/20-EJS1711>) with or without multilevel or additive terms (Catalina, Bürkner, and Vehtari, 2022, <https://proceedings.mlr.press/v151/catalina22a.html>), for some ordinal and nominal regression models (Weber, Glass, and Vehtari, 2025, <doi:10.1007/s00180-024-01506-0>), and for many other regression models (using the latent projection by Catalina, Bürkner, and Vehtari, 2021, <doi:10.48550/arXiv.2109.04702>, which can also be applied to most of the former models). The package is compatible with the 'rstanarm' and 'brms' packages, but other reference models can also be used. See the vignettes and the documentation for more information and examples.
 
 Development: https://github.com/stan-dev/projpred
 
@@ -22,7 +22,7 @@ Home: https://mc-stan.org/projpred/, https://discourse.mc-stan.org
 
 Package license: GPL-3.0-only
 
-Summary: Performs projection predictive feature selection for generalized linear models and generalized linear and additive multilevel models (see, Piironen, Paasiniemi and Vehtari, 2020, <https://projecteuclid.org/euclid.ejs/1589335310>, Catalina, Bürkner and Vehtari, 2020, <arXiv:2010.06994>). The package is compatible with the 'rstanarm' and 'brms' packages, but other reference models can also be used. See the package vignette for more information and examples.
+Summary: Performs projection predictive feature selection for generalized linear models (Piironen, Paasiniemi, and Vehtari, 2020, <doi:10.1214/20-EJS1711>) with or without multilevel or additive terms (Catalina, Bürkner, and Vehtari, 2022, <https://proceedings.mlr.press/v151/catalina22a.html>), for some ordinal and nominal regression models (Weber, Glass, and Vehtari, 2025, <doi:10.1007/s00180-024-01506-0>), and for many other regression models (using the latent projection by Catalina, Bürkner, and Vehtari, 2021, <doi:10.48550/arXiv.2109.04702>, which can also be applied to most of the former models). The package is compatible with the 'rstanarm' and 'brms' packages, but other reference models can also be used. See the vignettes and the documentation for more information and examples.
 
 Development: https://github.com/stan-dev/projpred
 
