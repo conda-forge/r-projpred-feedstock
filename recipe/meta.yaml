@@ -12,14 +12,14 @@ source:
   sha256: f404b1c0df634ab5821454386d379586c01047384d67d9227a22312655c59b47
 
 build:
-  missing_dso_whitelist:
-    - '*/R.dll'           # [win]
-    - '*/Rblas.dll'       # [win]
-    - '*/Rlapack.dll'     # [win]
   number: 0
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'           # [win]
+    - '*/Rblas.dll'       # [win]
+    - '*/Rlapack.dll'     # [win]
 
 requirements:
   build:
@@ -38,6 +38,7 @@ requirements:
     - r-ordinal                    # [build_platform != target_platform]
     - r-rcpp                       # [build_platform != target_platform]
     - r-rcpparmadillo              # [build_platform != target_platform]
+    - r-reformulas                 # [build_platform != target_platform]
     - r-rstantools                 # [build_platform != target_platform]
     - r-scales                     # [build_platform != target_platform]
     - {{ compiler('c') }}          # [not win]
@@ -68,10 +69,9 @@ requirements:
     - r-mvtnorm
     - r-nnet
     - r-ordinal
+    - r-reformulas
     - r-rstantools >=2.0.0
     - r-scales
-    - libblas
-    - liblapack
   run:
     - r-base
     - r-mass
@@ -88,6 +88,7 @@ requirements:
     - r-mvtnorm
     - r-nnet
     - r-ordinal
+    - r-reformulas
     - r-rstantools >=2.0.0
     - r-scales
 
@@ -100,8 +101,15 @@ about:
   home: https://mc-stan.org/projpred/, https://discourse.mc-stan.org
   dev_url: https://github.com/stan-dev/projpred
   license: GPL-3.0-only
-  summary: Performs projection predictive feature selection for generalized linear models and generalized linear and additive multilevel models (see, Piironen, Paasiniemi and Vehtari, 2020, <https://projecteuclid.org/euclid.ejs/1589335310>, Catalina, Bürkner and Vehtari, 2020, <arXiv:2010.06994>). The package is compatible
-    with the 'rstanarm' and 'brms' packages, but other reference models can also be used. See the package vignette for more information and examples.
+  summary: "Performs projection predictive feature selection for generalized linear models (Piironen,
+    Paasiniemi, and Vehtari, 2020, <doi:10.1214/20-EJS1711>) with or without multilevel
+    or additive terms (Catalina, B\xFCrkner, and Vehtari, 2022, <https://proceedings.mlr.press/v151/catalina22a.html>),
+    for some ordinal and nominal regression models (Weber, Glass, and Vehtari, 2025,
+    <doi:10.1007/s00180-024-01506-0>), and for many other regression models (using the
+    latent projection by Catalina, B\xFCrkner, and Vehtari, 2021, <doi:10.48550/arXiv.2109.04702>,
+    which can also be applied to most of the former models). The package is compatible
+    with the 'rstanarm' and 'brms' packages, but other reference models can also be
+    used. See the vignettes and the documentation for more information and examples."
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
     - LICENSE
